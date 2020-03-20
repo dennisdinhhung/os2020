@@ -1,0 +1,38 @@
+grep 'list' *
+
+            grep: Applications: Is a directory
+            grep: Calibre Library: Is a directory
+            grep: Creative Cloud Files: Is a directory
+            grep: Creative Cloud Files (archived) (1): Is a directory
+            grep: Deezloader Music: Is a directory
+            grep: Desktop: Is a directory
+            grep: Documents: Is a directory
+            grep: Downloads: Is a directory
+            grep: HelloWorld: Is a directory
+            grep: Library: Is a directory
+            grep: MEGAsync: Is a directory
+            grep: MEGAsync Downloads: Is a directory
+            grep: Movies: Is a directory
+            grep: Music: Is a directory
+            grep: Pictures: Is a directory
+            grep: Public: Is a directory
+            grep: Wine Files: Is a directory
+
+
+wc -l /etc/passwd
+     108 /etc/passwd
+
+free ( there is no free in Mac)
+
+find
+
+$ find ./Pictures -name *.JPG
+./Pictures/2020/03-09/DSC_9556.JPG
+./Pictures/2020/03-09/DSC_9555.JPG
+./Pictures/2020/01-26/DSC_9498.JPG
+./Pictures/2020/01-26/DSC_9499.JPG
+./Pictures/2020/01-26/DSC_9500.JPG
+./Pictures/2020/01-26/DSC_9497.JPG
+./Pictures/2020/01-26/DSC_9496.JPG
+./Pictures/2020/01-26/DSC_9495.JPG
+
