@@ -1,0 +1,38 @@
+ps -aux  
+
+	root         1  0.0  0.2 225704  4464 ?        Ss   Apr01   0:05 /lib/systemd/systemd --
+root         2  0.0  0.0      0     0 ?        S    Apr01   0:00 [kthreadd]
+root         3  0.0  0.0      0     0 ?        I<   Apr01   0:00 [rcu_gp]
+root         4  0.0  0.0      0     0 ?        I<   Apr01   0:00 [rcu_par_gp]
+root         9  0.0  0.0      0     0 ?        I<   Apr01   0:00 [mm_percpu_wq]
+root        10  0.0  0.0      0     0 ?        S    Apr01   0:00 [ksoftirqd/0]
+root        11  0.0  0.0      0     0 ?        I    Apr01   0:05 [rcu_sched]
+root        12  0.0  0.0      0     0 ?        S    Apr01   0:00 [migration/0]
+
+gnome-calculator & disown
+
+	[1] 21210
+
+
+
+ps -aux | grep gnome-calculator
+
+dennisd+ 21210  0.3  2.1 797968 40212 pts/0    Sl   13:36   0:00 /snap/gnome-calculator/704/usr/bin/gnome-calculator
+
+ /proc/21210/status
+bash: /proc/21210/status: Permission denied
+
+kill -STOP 21210
+
+	the command froze the process and it will not allow any input
+
+kill -CONT 21210 
+	
+	the command allow the process to be continued
+
+kill -KILL 21210
+
+	the command kills/closes the process/app
+
+
+
