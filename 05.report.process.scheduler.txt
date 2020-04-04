@@ -1,0 +1,13 @@
+Using sched_debug
+
+	cat /proc/sched_debug | grep -A 5 'runnable tasks' | grep systemd | awk '{print $5}'
+
+
+		55243
+
+Using /<pid>/sched
+
+	cat /proc/1/sched | grep nr_switches
+
+		nr_switches         :             72718
+
