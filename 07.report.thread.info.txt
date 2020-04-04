@@ -1,0 +1,12 @@
+Firstly, we will use 'ps -ef' to identify firefox's PID
+
+ps -ef | grep firefox
+
+dennisd+  2742     1  2 14:07 tty1     00:00:22 /usr/lib/firefox/firefox -new-window
+
+Then we shall use Firefox's PID to retrieve the number of processes
+
+ps -o nlwp 2742
+	NLWP
+  		56
+
